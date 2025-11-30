@@ -12,13 +12,13 @@ import hotelThree from "@/public/portfolioGallery/hotelThree.png";
 export const projects = [
   {
     id: 0,
-    title: "Responsive Design (Business Website)",
+    title: "Adopted Life Style (Video platform)",
     subtitle: "Crafting intuitive user experiences.",
     describe:
       "A professional, responsive business website built with a focus on usability, branding consistency, and seamless cross-device performance.",
     clientName: "Michael Anderson",
     date: "2025-03-15",
-    link: "https://smm-frontend-beta.vercel.app/",
+    link: "https://adaptable-life-style.vercel.app/",
     dateLabel: "15 March 2025",
     service: "UI/UX Design",
     budget: 850,
