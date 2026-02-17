@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { handleScroll } from "../utility/utility";
-import Logo from "@/public/Logo.png";
+import Logo from "@/public/agencyLogo.png";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -42,13 +42,11 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-[#212428] border-b border-gray-700 px-6 md:px-42 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+    <nav className="bg-[#212428] border-b border-gray-700 px-6 md:px-42 py-2 flex items-center justify-between fixed top-0 left-0 w-full z-50">
       {/* Logo */}
-      <div className="flex items-center gap-2 md:mr-70">
-        <Image src={Logo} alt="Logo" width={38} height={38} />
-        <h1 className="text-[#FFFFFF] font-semibold text-lg">
-          Frontend Solutions
-        </h1>
+      <div className="flex items-center gap-0 md:mr-80">
+        <Image src={Logo} alt="Logo" width={100} height={100} />
+        <h1 className="text-[#FFFFFF] font-semibold text-lg">Anexa Soft</h1>
       </div>
 
       {/* Desktop Menu */}

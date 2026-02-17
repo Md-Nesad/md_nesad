@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { handleScroll } from "../utility/utility";
-import logo from "@/public/Logo.png";
+import logo from "@/public/agencyLogo.png";
 
 export default function Footer() {
   return (
@@ -11,18 +11,19 @@ export default function Footer() {
           {/* Left - Logo and Description */}
           <div className="md:col-span-2 md:w-100">
             <div className="flex items-center mb-4">
-              <Image src={logo} alt="Logo" className="w-8 h-8 mr-2" />
+              <Image src={logo} alt="Logo" className="w-12 h-12 mr-2" />
               <h2 className="text-[#FFFFFF] text-2xl max-sm:text-lg font-semibold">
-                Frontend Solutions
+                Anexa Soft
               </h2>
             </div>
             <p className="text-sm text-[#F5EDFFCC] leading-relaxed max-sm:text-justify">
-              Frontend Solutions is a frontend and full-stack development
-              studio. We specialize in crafting simple, beautiful, and
-              user-friendly digital experiences that not only look great but
-              also engage users effectively. Our goal is to help brands build
-              meaningful connections with their audience by delivering
-              intuitive, functional, and responsive designs across all devices.
+              <b className="text-[#F896BD]">Anexa Soft</b> is a results-driven
+              digital agency specializing in UI/UX design, web development, and
+              mobile app development. We help businesses transform their ideas
+              into modern, scalable, and high-performing digital products. Our
+              team focuses on user-centered design, clean code, and innovative
+              solutions to deliver seamless experiences that drive growth and
+              success.
             </p>
           </div>
 
@@ -72,20 +73,20 @@ export default function Footer() {
           {/* Right - Contact */}
           <div className="lg:ml-15">
             <h3 className="text-[#EE4036] text-lg font-semibold mb-4">
-              Contact Me
+              Contact Us
             </h3>
             <ul className="space-y-3 text-sm text-[#F5EDFFCC]">
               <li>
                 📧 <span className="font-medium">Email:</span> <br />
-                nesadm26@gmail.com
+                anexasoft@gmail.com
               </li>
               <li>
                 📞 <span className="font-medium">WhatsApp:</span> <br />
-                +8801300113023
+                +880 1804-955129
               </li>
               <li>
                 🌐 <span className="font-medium">Location:</span> <br />
-                Thakurgaon, Bangladesh
+                Dhaka, Bangladesh.
               </li>
             </ul>
           </div>

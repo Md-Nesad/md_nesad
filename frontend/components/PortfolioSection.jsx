@@ -38,7 +38,8 @@ export default function PortfolioSection() {
       {/* Heading */}
       <div className="text-center mb-16">
         <p className="text-red-500 font-semibold text-sm uppercase mt-2">
-          My Portfolio <span className="text-green-600">(Client Projects)</span>
+          Our Portfolio{" "}
+          <span className="text-green-600">(Client Projects)</span>
         </p>
         <h2 className="text-4xl md:text-4xl font-bold mt-2 max-sm:text-2xl">
           Design & Development Highlights
@@ -132,7 +133,7 @@ export default function PortfolioSection() {
         ))}
         {/* Portfolio Link */}
       </div>
-      <div className="text-center mt-16">
+      {/* <div className="text-center mt-16">
         <p className="text-gray-300 text-lg max-sm:text-sm">
           To see my personal projects, visit{" "}
           <a
@@ -144,7 +145,7 @@ export default function PortfolioSection() {
             nesad-portfolio-website.vercel.app
           </a>
         </p>
-      </div>
+      </div> */}
 
       {/* Modal */}
       {selectedProject && (

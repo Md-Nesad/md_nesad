@@ -6,6 +6,7 @@ import linkedin from "@/public/HeroImage/linkedin.png";
 import whatsApp from "@/public/HeroImage/whatsapp.png";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -89,13 +90,14 @@ export default function ContactSection() {
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            onClick={(e) => handleSubmit(e)}
-            className="w-full bg-[#212428] py-3 rounded-sm shadow-[0_0_5px_rgba(255,255,255,0.3)] text-[#F5EDFFCC] font-semibold hover:bg-[#17191c] transition"
-          >
-            Send Message
-          </button>
+          <Link href="https://wa.me/message/WEGMWKKNQM5GB1" target="_blank">
+            <button
+              type="button"
+              className="w-full bg-[#212428] py-3 rounded-sm shadow-[0_0_5px_rgba(255,255,255,0.3)] text-[#F5EDFFCC] font-semibold hover:bg-[#17191c] transition"
+            >
+              Send Message
+            </button>
+          </Link>
         </form>
 
         {/* Profile Card */}
@@ -106,36 +108,35 @@ export default function ContactSection() {
             className="rounded-md mb-6 hover:scale-103 transition duration-300"
           />
           <h3 className="text-lg font-semibold mb-1 text-[#F5EDFFCC]">
-            Md. Nesad
+            Anexa Soft
           </h3>
+          <p className="text-gray-400 mb-4">Software Company</p>
           <p className="text-gray-400 mb-4">
-            Frontend Focused Full Stack Developer
+            Digital solutions for a connected world. We specialize in crafting
+            seamless digital experiences that drive results. Let's create
+            something amazing together.
           </p>
-          <p className="text-gray-400 mb-4">
-            I'm available for remote job, freelance, project and commission
-            based work. Feel free to connect with me through messaging.
-          </p>
-          <p className="text-gray-400 mb-2">WhatsApp: +8801300 113 023</p>
-          <p className="text-gray-400 mb-6">Email: nesadm26@gmail.com</p>
+          <p className="text-gray-400 mb-2">WhatsApp: +880 1804-955129</p>
+          <p className="text-gray-400 mb-6">Email: anexasoft@gmail.com</p>
 
-          <p className="text-gray-400 mb-2">FIND WITH ME</p>
+          <p className="text-gray-400 mb-2">FIND WITH US</p>
           <div className="md:mt-1">
             <div className="flex gap-3">
               {[
                 {
                   src: linkedin,
                   alt: "linkedin icon",
-                  link: "https://www.linkedin.com/in/md-nesad-30b5bb286/",
+                  link: "https://www.linkedin.com/company/anexa-soft/",
                 },
                 {
                   src: fiverr,
                   alt: "Fiverr",
-                  link: "https://www.fiverr.com/sah_ahamad?public_mode=true",
+                  link: "https://discord.gg/WngcepYWXn",
                 },
                 {
                   src: whatsApp,
                   alt: "whatsApp icon",
-                  link: "https://wa.me/+8801300113023",
+                  link: "https://wa.me/message/WEGMWKKNQM5GB1",
                 },
               ].map((social, idx) => {
                 return (

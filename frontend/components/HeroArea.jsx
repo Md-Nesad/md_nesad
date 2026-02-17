@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function HeroArea() {
-  const titles = ["Frontend Developer", "React Developer", "Next.js Developer"];
+  const titles = ["Ui/Ux design", "Web Development", "App Development"];
   const [displayedText, setDisplayedText] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -64,7 +64,7 @@ export default function HeroArea() {
           className="uppercase tracking-widest text-sm text-gray-400"
         >
           Welcome to
-          <span className="text-white font-medium"> Frontend Solutions</span>
+          <span className="text-[#F896BD] font-semibold"> Anexa Soft</span>
         </motion.p>
 
         <motion.h1
@@ -73,7 +73,8 @@ export default function HeroArea() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-5xl font-bold leading-tight"
         >
-          Hi, I’m <span className="text-orange-400">Md. Nesad</span> <br />a{" "}
+          Hi, We are <span className="text-orange-400">providing</span>
+          <br />
           <span className="text-white max-sm:text-[25px]">
             {displayedText}.
           </span>
@@ -85,8 +86,10 @@ export default function HeroArea() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-gray-300 leading-relaxed max-sm:text-justify"
         >
-          Frontend-Focused Full Stack Developer | Available for Remote, Project
-          & Commission-Based Work | Continuously Learning & Growing
+          <b className="text-[#F896BD]">Anexa Soft</b> is a digital agency
+          providing UI/UX design, web development, and mobile app development
+          services to build modern, scalable, and user-focused digital
+          solutions.
         </motion.p>
 
         {/* Contact Button */}
@@ -132,24 +135,24 @@ export default function HeroArea() {
           {/* Social Links */}
           <div className="md:mt-1">
             <p className="text-xs tracking-widest text-gray-400 mb-2">
-              FIND WITH ME
+              FIND WITH US
             </p>
             <div className="flex gap-3">
               {[
                 {
                   src: linkedin,
                   alt: "linkedin icon",
-                  link: "https://www.linkedin.com/in/md-nesad-30b5bb286/",
+                  link: "https://www.linkedin.com/company/anexa-soft/",
                 },
                 {
                   src: fiverr,
                   alt: "Fiverr",
-                  link: "https://www.fiverr.com/sah_ahamad?public_mode=true",
+                  link: "https://discord.gg/WngcepYWXn",
                 },
                 {
                   src: whatsApp,
                   alt: "whatsApp icon",
-                  link: "https://wa.me/+8801300113023",
+                  link: "https://wa.me/message/WEGMWKKNQM5GB1",
                 },
               ].map((social, idx) => {
                 return (

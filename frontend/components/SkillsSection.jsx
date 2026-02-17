@@ -25,7 +25,7 @@ const SkillsSection = () => {
                 : "text-[#F5EDFFB2] bg-[#212428]"
             }`}
           >
-            Professional Skills
+            Tech Stack
           </button>
           <button
             onClick={() => setActiveTab("experience")}

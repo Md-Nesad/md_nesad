@@ -17,10 +17,10 @@ export default function Services() {
         viewport={{ once: true }}
       >
         <p className="text-[#EE4036] font-semibold uppercase tracking-widest">
-          My Services
+          Our Services
         </p>
         <h2 className="text-3xl md:text-3xl font-bold max-sm:text-2xl">
-          Website and Application Development
+          Web App and Mobile App Development
         </h2>
       </motion.div>
 
