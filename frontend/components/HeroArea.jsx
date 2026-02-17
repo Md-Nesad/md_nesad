@@ -3,11 +3,13 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import profileImg from "@/public/HeroImage/heroImage.png";
 import figma from "@/public/HeroImage/figma.png";
-import xd from "@/public/HeroImage/tailwind.png";
-import photoshop from "@/public/HeroImage/javascript.png";
+// import xd from "@/public/HeroImage/tailwind.png";
+// import photoshop from "@/public/HeroImage/javascript.png";
 import react from "@/public/HeroImage/react.png";
 import next from "@/public/HeroImage/next.png";
-import fiverr from "@/public/HeroImage/fiverr.png";
+import nodeJs from "@/public/HeroImage/nodeJs.png";
+import php from "@/public/HeroImage/php.png";
+import fiverr from "@/public/HeroImage/discord.png";
 import linkedin from "@/public/HeroImage/linkedin.png";
 import whatsApp from "@/public/HeroImage/whatsapp.png";
 import { handleScroll } from "../utility/utility";
@@ -15,7 +17,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function HeroArea() {
-  const titles = ["Ui/Ux design", "Web Development", "App Development"];
+  const titles = ["UI/UX design", "Web Development", "App Development"];
   const [displayedText, setDisplayedText] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -64,7 +66,7 @@ export default function HeroArea() {
           className="uppercase tracking-widest text-sm text-gray-400"
         >
           Welcome to
-          <span className="text-[#F896BD] font-semibold"> Anexa Soft</span>
+          <b className="text-[#F896BD]"> Anexa Soft</b>
         </motion.p>
 
         <motion.h1
@@ -73,7 +75,7 @@ export default function HeroArea() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-5xl font-bold leading-tight"
         >
-          Hi, We are <span className="text-orange-400">providing</span>
+          Your digital <span className="text-orange-400">solutions</span>
           <br />
           <span className="text-white max-sm:text-[25px]">
             {displayedText}.
@@ -98,9 +100,9 @@ export default function HeroArea() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="flex items-center gap-2 bg-[#212428] shadow-md shadow-[#63636352] px-6 py-3 rounded-md text-[#EE4036] font-semibold hover:scale-105 transition"
+          className="flex items-center gap-2 bg-[#212428] shadow-md shadow-[#63636352] px-6 py-3 rounded-md text-[#F896BD] font-semibold hover:scale-105 transition"
         >
-          Contact me <ArrowRight size={18} />
+          Contact us <ArrowRight size={18} />
         </motion.button>
 
         {/* Skills & Socials */}
@@ -111,7 +113,7 @@ export default function HeroArea() {
               BEST SKILL ON
             </p>
             <div className="flex gap-3">
-              {[figma, xd, photoshop, react, next].map((icon, idx) => (
+              {[figma, react, next, nodeJs, php].map((icon, idx) => (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -123,9 +125,9 @@ export default function HeroArea() {
                   <Image
                     src={icon}
                     alt="skill icon"
-                    width={34}
-                    height={34}
-                    className="object-contain"
+                    width={40}
+                    height={40}
+                    className="object-cover"
                   />
                 </motion.div>
               ))}
@@ -141,17 +143,17 @@ export default function HeroArea() {
               {[
                 {
                   src: linkedin,
-                  alt: "linkedin icon",
+                  alt: "Contact on linkedin",
                   link: "https://www.linkedin.com/company/anexa-soft/",
                 },
                 {
                   src: fiverr,
-                  alt: "Fiverr",
+                  alt: "Contact on discord",
                   link: "https://discord.gg/WngcepYWXn",
                 },
                 {
                   src: whatsApp,
-                  alt: "whatsApp icon",
+                  alt: "Contact by whatsApp",
                   link: "https://wa.me/message/WEGMWKKNQM5GB1",
                 },
               ].map((social, idx) => {
@@ -171,6 +173,9 @@ export default function HeroArea() {
                       src={social.src}
                       alt={social.alt}
                       className="object-contain"
+                      width={50}
+                      height={50}
+                      title={social.alt}
                     />
                   </motion.a>
                 );

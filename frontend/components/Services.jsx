@@ -16,11 +16,11 @@ export default function Services() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <p className="text-[#EE4036] font-semibold uppercase tracking-widest">
+        <p className="text-[#F896BD] font-semibold uppercase tracking-widest">
           Our Services
         </p>
         <h2 className="text-3xl md:text-3xl font-bold max-sm:text-2xl">
-          Web App and Mobile App Development
+          Ui/UX Design, Web and App Development
         </h2>
       </motion.div>
 

@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-2 md:w-100">
             <div className="flex items-center mb-4">
               <Image src={logo} alt="Logo" className="w-12 h-12 mr-2" />
-              <h2 className="text-[#FFFFFF] text-2xl max-sm:text-lg font-semibold">
+              <h2 className="text-[#F896BD] text-2xl max-sm:text-lg font-semibold">
                 Anexa Soft
               </h2>
             </div>
@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* Middle - Quick Links */}
           <div>
-            <h3 className="text-[#EE4036] text-lg font-semibold mb-4">
+            <h3 className="text-[#F896BD] text-lg font-semibold mb-4">
               Quick Link
             </h3>
             <ul className="space-y-2 text-[#F5EDFFCC]">
@@ -38,7 +38,7 @@ export default function Footer() {
                   onClick={() =>
                     window.scrollTo({ top: 0, behavior: "smooth" })
                   }
-                  className="hover:text-[#EE4036]"
+                  className="hover:text-[#F896BD]"
                 >
                   Home
                 </button>
@@ -46,7 +46,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => handleScroll("services")}
-                  className="hover:text-[#EE4036]"
+                  className="hover:text-[#F896BD]"
                 >
                   Service
                 </button>
@@ -54,7 +54,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => handleScroll("portfolio")}
-                  className="hover:text-[#EE4036]"
+                  className="hover:text-[#F896BD]"
                 >
                   Portfolio
                 </button>
@@ -62,7 +62,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => handleScroll("contact")}
-                  className="hover:text-[#EE4036]"
+                  className="hover:text-[#F896BD]"
                 >
                   Contact
                 </button>
@@ -72,7 +72,7 @@ export default function Footer() {
 
           {/* Right - Contact */}
           <div className="lg:ml-15">
-            <h3 className="text-[#EE4036] text-lg font-semibold mb-4">
+            <h3 className="text-[#F896BD] text-lg font-semibold mb-4">
               Contact Us
             </h3>
             <ul className="space-y-3 text-sm text-[#F5EDFFCC]">

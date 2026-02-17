@@ -1,20 +1,32 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function ProjectModal({ isOpen, onClose, project }) {
+  if (!isOpen) return null;
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () =>
     setCurrent((prev) => (prev + 1) % project.images.length);
   const prevSlide = () =>
     setCurrent(
-      (prev) => (prev - 1 + project.images.length) % project.images.length
+      (prev) => (prev - 1 + project.images.length) % project.images.length,
     );
 
-  if (!isOpen) return null;
+  const handleEscKey = (e) => {
+    if (e.key === "Escape") {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleEscKey);
+    return () => {
+      window.removeEventListener("keydown", handleEscKey);
+    };
+  }, []);
 
   return (
     <AnimatePresence>

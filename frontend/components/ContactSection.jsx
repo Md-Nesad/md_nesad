@@ -1,7 +1,7 @@
 "use client";
 import contact from "@/public/contact.png";
 import Image from "next/image";
-import fiverr from "@/public/HeroImage/fiverr.png";
+import fiverr from "@/public/HeroImage/discord.png";
 import linkedin from "@/public/HeroImage/linkedin.png";
 import whatsApp from "@/public/HeroImage/whatsapp.png";
 import { FiChevronDown } from "react-icons/fi";
@@ -17,7 +17,7 @@ export default function ContactSection() {
       className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42"
     >
       <div className="text-center mb-16">
-        <p className="text-red-500 text-sm font-semibold">Contact Me</p>
+        <p className="text-[#F896BD] text-sm font-semibold">Contact Me</p>
         <h2 className="text-4xl max-sm:text-2xl md:text-4xl text-[#F5EDFF] font-bold mt-2">
           Let’s Build Something Great
         </h2>
@@ -125,17 +125,17 @@ export default function ContactSection() {
               {[
                 {
                   src: linkedin,
-                  alt: "linkedin icon",
+                  alt: "Find us on linkedin",
                   link: "https://www.linkedin.com/company/anexa-soft/",
                 },
                 {
                   src: fiverr,
-                  alt: "Fiverr",
+                  alt: "Find us on discord",
                   link: "https://discord.gg/WngcepYWXn",
                 },
                 {
                   src: whatsApp,
-                  alt: "whatsApp icon",
+                  alt: "Contact us by whatsApp",
                   link: "https://wa.me/message/WEGMWKKNQM5GB1",
                 },
               ].map((social, idx) => {
@@ -155,6 +155,9 @@ export default function ContactSection() {
                       src={social.src}
                       alt={social.alt}
                       className="object-contain"
+                      width={48}
+                      height={48}
+                      title={social.alt}
                     />
                   </motion.a>
                 );

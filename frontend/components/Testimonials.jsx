@@ -14,7 +14,7 @@ export default function Testimonials() {
 
   const prevTestimonial = () => {
     setCurrent(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
     );
   };
 
@@ -25,7 +25,7 @@ export default function Testimonials() {
       id="testimonial"
       className="bg-[#212428] text-white py-16 px-6 flex flex-col items-center"
     >
-      <h4 className="text-red-500 uppercase text-sm tracking-wider font-semibold mb-2">
+      <h4 className="text-[#F896BD] uppercase text-sm tracking-wider font-semibold mb-2">
         Testimonials
       </h4>
       <h2 className="text-3xl max-sm:text-2xl md:text-4xl font-bold mb-10 text-center">

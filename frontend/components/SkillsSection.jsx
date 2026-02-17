@@ -9,7 +9,7 @@ const SkillsSection = () => {
   return (
     <section className="bg-[#212428] text-white py-16 px-6 md:px-16 lg:px-42 mt-1 mb-[2px]">
       <div className=" mx-auto text-center">
-        <p className="text-[#EE4036] font-semibold mb-2">
+        <p className="text-[#F896BD] font-semibold mb-2">
           02+ YEARS OF EXPERIENCE
         </p>
         <h2 className="text-3xl md:text-4xl font-bold mb-8 max-sm:text-2xl">

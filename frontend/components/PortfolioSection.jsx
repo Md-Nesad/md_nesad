@@ -37,7 +37,7 @@ export default function PortfolioSection() {
     >
       {/* Heading */}
       <div className="text-center mb-16">
-        <p className="text-red-500 font-semibold text-sm uppercase mt-2">
+        <p className="text-[#F896BD] font-semibold text-sm uppercase mt-2">
           Our Portfolio{" "}
           <span className="text-green-600">(Client Projects)</span>
         </p>
@@ -99,7 +99,7 @@ export default function PortfolioSection() {
             </div>
 
             <div className="p-5 mb-5">
-              <h3 className="text-[#EE4036] font-medium mb-4">{item.title}</h3>
+              <h3 className="text-[#F896BD] font-medium mb-4">{item.title}</h3>
               <p className="text-xl font-semibold pr-15 mb-10 text-gray-300 flex items-center gap-2">
                 {item.subtitle}
               </p>
@@ -110,7 +110,7 @@ export default function PortfolioSection() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-red-400 hover:text-red-500 underline absolute bottom-5 right-5 transition-colors duration-300"
+                  className="text-sm text-[#F896BD] hover:text-[#cb7b9b] underline absolute bottom-5 right-5 transition-colors duration-300"
                 >
                   Visit Project
                 </a>
@@ -120,7 +120,7 @@ export default function PortfolioSection() {
               <button
                 onClick={() => setSelectedProject(item)}
                 className="
-                  text-red-500 text-xl absolute bottom-5 left-5
+                  text-[#F896BD] text-xl absolute bottom-5 left-5
                   opacity-0 translate-x-[-10px]
                   transition-all duration-300 ease-in-out
                   group-hover:opacity-100 group-hover:translate-x-0

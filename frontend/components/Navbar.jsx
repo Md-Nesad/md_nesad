@@ -46,7 +46,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center gap-0 md:mr-80">
         <Image src={Logo} alt="Logo" width={100} height={100} />
-        <h1 className="text-[#FFFFFF] font-semibold text-lg">Anexa Soft</h1>
+        <h1 className="text-[#F896BD] font-semibold text-lg">Anexa Soft</h1>
       </div>
 
       {/* Desktop Menu */}
@@ -63,7 +63,7 @@ export default function Navbar() {
           >
             {item}
             {active === item && (
-              <span className="absolute left-0 -bottom-1 w-full h-[1.5px] bg-[#EE4036]"></span>
+              <span className="absolute left-0 -bottom-1 w-full h-[1.5px] bg-[#F896BD]"></span>
             )}
           </li>
         ))}
@@ -74,7 +74,7 @@ export default function Navbar() {
         {/* Buy Now Button */}
         <button
           onClick={() => handleClick("contact")}
-          className="hidden md:flex items-center gap-2 bg-[#1A1C20] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition text-[#EE4036]"
+          className="hidden md:flex items-center gap-2 bg-[#1A1C20] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition text-[#F896BD]"
         >
           <ShoppingCart size={16} />
           Buy Now

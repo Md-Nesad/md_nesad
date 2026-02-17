@@ -6,7 +6,7 @@ export default function PricingSection() {
   return (
     <section className="bg-[#212428] text-white py-20 px-4 md:px-12 lg:px-42 mb-[2px]">
       <div className="text-center mb-16">
-        <p className="text-red-500 text-sm font-semibold">My Pricing</p>
+        <p className="text-[#F896BD] text-sm font-semibold">My Pricing</p>
         <h2 className="text-4xl max-sm:text-2xl md:text-4xl font-bold mt-2">
           Plans That Fit Your Project
         </h2>
