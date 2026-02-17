@@ -10,7 +10,7 @@ export default function Services() {
     >
       {/* Section Header */}
       <motion.div
-        className="text-center mb-12 mt-7"
+        className="text-center mb-12 mt-10"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

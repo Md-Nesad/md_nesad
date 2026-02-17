@@ -36,7 +36,7 @@ export default function PortfolioSection() {
       className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42 mt-1"
     >
       {/* Heading */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 mt-7">
         <p className="text-[#F896BD] font-semibold text-sm uppercase mt-2">
           Our Portfolio{" "}
           <span className="text-green-600">(Client Projects)</span>

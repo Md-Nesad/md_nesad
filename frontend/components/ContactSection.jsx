@@ -16,7 +16,7 @@ export default function ContactSection() {
       id="contact"
       className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42"
     >
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 mt-5">
         <p className="text-[#F896BD] text-sm font-semibold">Contact Me</p>
         <h2 className="text-4xl max-sm:text-2xl md:text-4xl text-[#F5EDFF] font-bold mt-2">
           Let’s Build Something Great
