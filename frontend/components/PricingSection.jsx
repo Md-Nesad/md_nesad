@@ -51,7 +51,9 @@ export default function PricingSection() {
           </ul>
 
           <button
-            onClick={() => handleScroll("contact")}
+            onClick={() => {
+              window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
+            }}
             className="w-full bg-[#212428] text-[#FAAF40] py-3 rounded-md font-semibold hover:bg-[#17191c] transition duration-150 shadow-[0_0_5px_rgba(255,255,255,0.3)] mt-21"
           >
             Get Started
@@ -96,7 +98,9 @@ export default function PricingSection() {
           </ul>
 
           <button
-            onClick={() => handleScroll("contact")}
+            onClick={() => {
+              window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
+            }}
             className="w-full bg-[#212428] text-[#FAAF40] py-3 rounded-md font-semibold hover:bg-[#17191c] transition duration-150 shadow-[0_0_5px_rgba(255,255,255,0.3)]"
           >
             Get Started
@@ -141,7 +145,9 @@ export default function PricingSection() {
           </ul>
 
           <button
-            onClick={() => handleScroll("contact")}
+            onClick={() => {
+              window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
+            }}
             className="w-full bg-[#212428] text-[#FAAF40] py-3 mt-2 rounded-md font-semibold hover:bg-[#17191c] transition duration-150 shadow-[0_0_5px_rgba(255,255,255,0.3)]"
           >
             Get Started

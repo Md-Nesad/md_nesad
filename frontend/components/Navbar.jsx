@@ -4,6 +4,7 @@ import { ShoppingCart, Menu, X } from "lucide-react";
 import { handleScroll } from "../utility/utility";
 import Logo from "@/public/agencyLogo.png";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,11 @@ export default function Navbar() {
   return (
     <nav className="bg-[#212428] border-b border-gray-700 px-6 md:px-42 py-3 flex items-center justify-between fixed top-0 left-0 w-full z-50">
       {/* Logo */}
-      <div className="flex items-center gap-0 md:mr-80">
+      <div
+        id="home"
+        onClick={() => handleClick("home")}
+        className="flex items-center gap-0 md:mr-80 cursor-pointer"
+      >
         <Image src={Logo} alt="Logo" width={100} height={100} />
         <h1 className="text-[#F896BD] font-semibold text-lg">Anexa Soft</h1>
       </div>
@@ -73,7 +78,9 @@ export default function Navbar() {
       <div className="flex items-center gap-3">
         {/* Buy Now Button */}
         <button
-          onClick={() => handleClick("contact")}
+          onClick={() => {
+            window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
+          }}
           className="hidden md:flex items-center gap-2 bg-[#1A1C20] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition text-[#F896BD]"
         >
           <ShoppingCart size={16} />
@@ -112,7 +119,7 @@ export default function Navbar() {
             </li>
           ))}
           <button
-            onClick={() => handleClick("contact")}
+            onClick={() => redirect("https://wa.me/message/WEGMWKKNQM5GB1")}
             className={`flex items-center gap-2 bg-[#212428] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition duration-300 ${
               active === "contact" ? "text-[#EE4036]" : "text-[#EE4036]"
             }`}
