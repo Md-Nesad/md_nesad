@@ -42,7 +42,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-[#212428] border-b border-gray-700 px-6 md:px-42 py-2 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+    <nav className="bg-[#212428] border-b border-gray-700 px-6 md:px-42 py-3 flex items-center justify-between fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       <div className="flex items-center gap-0 md:mr-80">
         <Image src={Logo} alt="Logo" width={100} height={100} />

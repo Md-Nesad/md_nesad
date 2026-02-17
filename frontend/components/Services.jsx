@@ -20,7 +20,7 @@ export default function Services() {
           Our Services
         </p>
         <h2 className="text-3xl md:text-3xl font-bold max-sm:text-2xl">
-          Ui/UX Design, Web and App Development
+          UI/UX Design, Web and App Development
         </h2>
       </motion.div>
 
