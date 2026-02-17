@@ -37,9 +37,9 @@ export default function PortfolioSection() {
     >
       {/* Heading */}
       <div className="text-center mb-16 mt-7">
-        <p className="text-[#F896BD] font-semibold text-sm uppercase mt-2">
+        <p className="text-[#F896BD] font-semibold text-md uppercase mt-2">
           Our Portfolio{" "}
-          <span className="text-green-600">(Client Projects)</span>
+          <span className="text-green-600 text-sm">(Client Projects)</span>
         </p>
         <h2 className="text-4xl md:text-4xl font-bold mt-2 max-sm:text-2xl">
           Design & Development Highlights
@@ -112,7 +112,7 @@ export default function PortfolioSection() {
                   rel="noopener noreferrer"
                   className="text-sm text-[#F896BD] hover:text-[#cb7b9b] underline absolute bottom-5 right-5 transition-colors duration-300"
                 >
-                  Visit Project
+                  View Project
                 </a>
               )}
 

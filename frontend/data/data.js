@@ -76,29 +76,28 @@ export const clients = [
 
 export const services = [
   {
-    title: "Figma to React, Next.js",
-    desc: "Convert your Figma or design files into fully functional, pixel-perfect React or Next.js applications with responsive UI and clean code.",
+    title: "UI/UX Design",
+    desc: "We create modern, user-centric interfaces with intuitive flows, wireframes, and interactive prototypes, ensuring seamless experiences across web and mobile platforms.",
   },
   {
-    title: "Landing page",
-    desc: "High-converting, SEO-friendly landing pages built with modern design and fast performance to boost your sales and customer engagement.",
+    title: "Full Stack Development",
+    desc: "End-to-end web solutions combining scalable architecture, secure backend systems, and high-performance frontend experiences for production-ready applications.",
   },
   {
-    title: "Business website",
-    desc: "Professional, responsive websites tailored for your business, helping you build trust, showcase services, and attract potential clients online.",
-  },
-
-  {
-    title: "Dashboard (Admin panel)",
-    desc: "Custom dashboards and admin panels with real-time data visualization, easy management tools, and responsive design for smooth operations.",
+    title: "Web & App Development",
+    desc: "Custom websites and mobile apps built with modern technologies, optimized for speed, responsiveness, and real-world business impact.",
   },
   {
-    title: "Wireframes & Prototypes",
-    desc: "Bring your ideas to life with interactive wireframes and prototypes, helping you visualize the flow and validate concepts before full development.",
+    title: "Business & Management Systems",
+    desc: "Tailored CRM, ERP, MVP, dashboards, and enterprise management systems designed to automate workflows, streamline operations, and enhance productivity.",
   },
   {
-    title: "API Integration",
-    desc: "Seamless integration of third-party APIs (payment, maps, authentication and more...) to extend your website’s functionality and improve user experience.",
+    title: "DevOps & CI/CD",
+    desc: "Automated deployment pipelines, cloud infrastructure setup, and continuous integration/delivery for fast, reliable, and seamless product releases.",
+  },
+  {
+    title: "Security & Performance Optimization",
+    desc: "Robust security measures, code audits, and performance optimization to ensure your applications remain secure, fast, and scalable under all conditions.",
   },
 ];
 
@@ -110,14 +109,16 @@ export const skills = {
     { name: "React.js", level: 90 },
     { name: "Next.js", level: 90 },
     { name: "TypeScript", level: 85 },
+    { name: "State Management(Redux, Zustand)", level: 95 },
   ],
   backend: [
-    { name: "Next.js", level: 90 },
-    { name: "Node.js", level: 80 },
-    { name: "Express.js", level: 90 },
-    { name: "MongoDB", level: 85 },
-    { name: "RESTful APIs", level: 95 },
-    { name: "JWT & Multer", level: 90 },
+    { name: "Node.js & PHP", level: 90 },
+    { name: "MongoDB & MySQL", level: 90 },
+    { name: "Express.js & Laravel", level: 95 },
+    { name: "RESTful APIs & GraphQL", level: 95 },
+    { name: "Docker", level: 80 },
+    { name: "CI/CD Pipelines", level: 87 },
+    { name: "Redis / Memcached", level: 85 },
   ],
 };
 

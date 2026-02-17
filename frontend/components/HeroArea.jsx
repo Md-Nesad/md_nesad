@@ -12,7 +12,6 @@ import php from "@/public/HeroImage/php.png";
 import fiverr from "@/public/HeroImage/discord.png";
 import linkedin from "@/public/HeroImage/linkedin.png";
 import whatsApp from "@/public/HeroImage/whatsapp.png";
-import { handleScroll } from "../utility/utility";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 

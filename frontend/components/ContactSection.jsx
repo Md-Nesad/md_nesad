@@ -8,16 +8,13 @@ import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 import Link from "next/link";
 export default function ContactSection() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
   return (
     <section
       id="contact"
       className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42"
     >
       <div className="text-center mb-16 mt-5">
-        <p className="text-[#F896BD] text-sm font-semibold">Contact Me</p>
+        <p className="text-[#F896BD] text-sm font-semibold">Contact Us</p>
         <h2 className="text-4xl max-sm:text-2xl md:text-4xl text-[#F5EDFF] font-bold mt-2">
           Let’s Build Something Great
         </h2>
