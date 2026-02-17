@@ -28,7 +28,7 @@ export default function PricingSection() {
               </span>
             </p>
             <div className="text-right text-yellow-400 text-xl font-bold mb-6">
-              $120
+              $150
             </div>
           </div>
 
@@ -75,7 +75,7 @@ export default function PricingSection() {
               </span>
             </p>
             <div className="text-right text-yellow-400 text-xl font-bold mb-6">
-              $450
+              $550
             </div>
           </div>
 
