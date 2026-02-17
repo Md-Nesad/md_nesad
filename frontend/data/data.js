@@ -109,16 +109,18 @@ export const skills = {
     { name: "React.js", level: 90 },
     { name: "Next.js", level: 90 },
     { name: "TypeScript", level: 85 },
+    { name: "Flutter & React Native", level: 90 },
     { name: "State Management(Redux, Zustand)", level: 95 },
   ],
   backend: [
     { name: "Node.js & PHP", level: 90 },
-    { name: "MongoDB & MySQL", level: 90 },
     { name: "Express.js & Laravel", level: 95 },
+    { name: "MongoDB, MySQL, PostgreSQL & Redis", level: 90 },
     { name: "RESTful APIs & GraphQL", level: 95 },
     { name: "Docker", level: 80 },
     { name: "CI/CD Pipelines", level: 87 },
-    { name: "Redis / Memcached", level: 85 },
+    { name: "Socket.io", level: 90 },
+    { name: "WebRTC", level: 85 },
   ],
 };
 

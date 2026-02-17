@@ -46,8 +46,8 @@ const SkillsSection = () => {
             {/* Design Skills */}
             <div>
               <h3 className="text-xl font-bold mb-10 relative">
-                Frontend
-                <span className="block w-27 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
+                Frontend + Mobile (App)
+                <span className="block w-62 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
               </h3>
               {skills.frontend.map((skill, i) => (
                 <div key={i} className="mb-6">
