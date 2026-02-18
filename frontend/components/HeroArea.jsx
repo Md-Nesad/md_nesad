@@ -87,10 +87,12 @@ export default function HeroArea() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-gray-300 leading-relaxed max-sm:text-justify"
         >
-          <b className="text-[#F896BD]">Anexa Soft</b> is a digital agency
-          providing UI/UX design, web development, and mobile app development
-          services to build modern, scalable, and user-focused digital
-          solutions.
+          <b className="text-[#F896BD]">Anexa Soft</b> is a digital agency.
+          Before going to collaborate with our clients, we take the time to
+          understand their requirements, goals, and target audience. Then we
+          analyze the problem that the client is facing and we provide the best
+          solution to solve that problem by choosing the right technologies and
+          tools.
         </motion.p>
 
         {/* Contact Button */}
