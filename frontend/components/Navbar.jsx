@@ -2,15 +2,13 @@
 import { useState, useEffect } from "react";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { handleScroll } from "../utility/utility";
-import Logo from "@/public/agencyLogo.png";
+import Logo from "@/public/Logo.png";
 import Image from "next/image";
-import { redirect } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("home");
 
-  // section in the page
   const sections = ["home", "services", "portfolio", "testimonial", "contact"];
 
   const handleClick = (section) => {
@@ -24,18 +22,22 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScrollSpy = () => {
-      let current = "";
+      // 👇 Always detect home when near top
+      if (window.scrollY < 200) {
+        setActive("home");
+        return;
+      }
+
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
           const rect = el.getBoundingClientRect();
           if (rect.top <= 120 && rect.bottom >= 120) {
-            current = section;
-            break;
+            setActive(section);
+            return;
           }
         }
       }
-      setActive(current);
     };
 
     window.addEventListener("scroll", handleScrollSpy);
@@ -43,15 +45,16 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-[#212428] border-b border-gray-700 px-6 md:px-42 py-3 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+    <nav className="bg-[#212428] border-b border-gray-700 px-6 md:px-18 py-4 flex items-center justify-around fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       <div
-        id="home"
         onClick={() => handleClick("home")}
-        className="flex items-center gap-0 md:mr-80 cursor-pointer"
+        className="flex items-center gap-3 cursor-pointer"
       >
-        <Image src={Logo} alt="Logo" width={100} height={100} />
-        <h1 className="text-[#F896BD] font-semibold text-lg">Anexa Soft</h1>
+        <Image src={Logo} alt="Logo" width={40} height={40} />
+        <h1 className="text-orange-400 font-bold text-lg">
+          Frontend <span className="text-white">Solutions</span>
+        </h1>
       </div>
 
       {/* Desktop Menu */}
@@ -61,33 +64,29 @@ export default function Navbar() {
             key={item}
             onClick={() => handleClick(item)}
             className={`relative cursor-pointer capitalize transition ${
-              active === item
-                ? "text-[#FFFFFF] font-semibold"
-                : "hover:text-white"
+              active === item ? "text-white font-semibold" : "hover:text-white"
             }`}
           >
             {item}
             {active === item && (
-              <span className="absolute left-0 -bottom-1 w-full h-[1.5px] bg-[#F896BD]"></span>
+              <span className="absolute left-0 -bottom-1 w-full h-[1.5px] bg-[#EE4036]" />
             )}
           </li>
         ))}
       </ul>
 
-      {/* Buttons (Buy Now + Mobile Menu) */}
+      {/* Buttons */}
       <div className="flex items-center gap-3">
-        {/* Buy Now Button */}
         <button
-          onClick={() => {
-            window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
-          }}
-          className="hidden md:flex items-center gap-2 bg-[#1A1C20] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition text-[#F896BD]"
+          onClick={() =>
+            window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank")
+          }
+          className="hidden md:flex items-center gap-2 bg-[#1A1C20] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition text-[#EE4036]"
         >
           <ShoppingCart size={16} />
           Buy Now
         </button>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
@@ -111,18 +110,19 @@ export default function Navbar() {
               onClick={() => handleClick(item)}
               className={`cursor-pointer capitalize ${
                 active === item
-                  ? "text-[#FFFFFF] font-semibold"
+                  ? "text-white font-semibold"
                   : "hover:text-white"
               }`}
             >
               {item}
             </li>
           ))}
+
           <button
-            onClick={() => redirect("https://wa.me/message/WEGMWKKNQM5GB1")}
-            className={`flex items-center gap-2 bg-[#212428] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition duration-300 ${
-              active === "contact" ? "text-[#EE4036]" : "text-[#EE4036]"
-            }`}
+            onClick={() =>
+              window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank")
+            }
+            className="flex items-center gap-2 bg-[#1A1C20] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition text-[#EE4036]"
           >
             <ShoppingCart size={16} />
             Buy Now

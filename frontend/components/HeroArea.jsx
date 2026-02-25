@@ -3,12 +3,10 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import profileImg from "@/public/HeroImage/heroImage.png";
 import figma from "@/public/HeroImage/figma.png";
-// import xd from "@/public/HeroImage/tailwind.png";
-// import photoshop from "@/public/HeroImage/javascript.png";
+import xd from "@/public/HeroImage/tailwind.png";
 import react from "@/public/HeroImage/react.png";
 import next from "@/public/HeroImage/next.png";
 import nodeJs from "@/public/HeroImage/nodeJs.png";
-import php from "@/public/HeroImage/php.png";
 import fiverr from "@/public/HeroImage/discord.png";
 import linkedin from "@/public/HeroImage/linkedin.png";
 import whatsApp from "@/public/HeroImage/whatsapp.png";
@@ -16,7 +14,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function HeroArea() {
-  const titles = ["UI/UX design", "Web Development", "App Development"];
+  const titles = ["Frontend Developer", "UI developer", "Full stack developer"];
   const [displayedText, setDisplayedText] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -65,7 +63,7 @@ export default function HeroArea() {
           className="uppercase tracking-widest text-sm text-gray-400"
         >
           Welcome to
-          <b className="text-[#F896BD]"> Anexa Soft</b>
+          <b className="text-orange-400"> Frontend Solutions</b>
         </motion.p>
 
         <motion.h1
@@ -74,10 +72,10 @@ export default function HeroArea() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-5xl font-bold leading-tight"
         >
-          Your digital <span className="text-orange-400">solutions</span>
+          Hi, I am <span className="text-orange-400">Md. Nesad</span>
           <br />
           <span className="text-white max-sm:text-[25px]">
-            {displayedText}.
+            a {displayedText}.
           </span>
         </motion.h1>
 
@@ -87,10 +85,9 @@ export default function HeroArea() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-gray-300 leading-relaxed max-sm:text-justify"
         >
-          <b className="text-[#F896BD]">Anexa Soft</b> is a digital agency.
-          Before going to collaborate with our clients, we take the time to
-          understand their requirements, goals, and target audience. Then we
-          analyze the problem that the client is facing and we provide the best
+          Before going to collaborate with clients, I take the time to
+          understand their requirements, goals, and target audience. Then I
+          analyze the problem that the client is facing and I provide the best
           solution to solve that problem by choosing the right technologies and
           tools.
         </motion.p>
@@ -98,14 +95,14 @@ export default function HeroArea() {
         {/* Contact Button */}
         <motion.button
           onClick={() => {
-            window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
+            window.open("https://wa.me/01300113023", "_blank");
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="flex items-center gap-2 bg-[#212428] shadow-md shadow-[#63636352] px-6 py-3 rounded-md text-[#F896BD] font-semibold hover:scale-105 transition"
+          className="flex items-center gap-2 bg-[#212428] shadow-md shadow-[#63636352] px-6 py-3 rounded-md text-[#EE4036] font-semibold hover:scale-105 transition"
         >
-          Contact us <ArrowRight size={18} />
+          Contact me <ArrowRight size={18} />
         </motion.button>
 
         {/* Skills & Socials */}
@@ -116,7 +113,7 @@ export default function HeroArea() {
               BEST SKILL ON
             </p>
             <div className="flex gap-3">
-              {[figma, react, next, nodeJs, php].map((icon, idx) => (
+              {[figma, xd, react, next, nodeJs].map((icon, idx) => (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -140,7 +137,7 @@ export default function HeroArea() {
           {/* Social Links */}
           <div className="md:mt-1">
             <p className="text-xs tracking-widest text-gray-400 mb-2">
-              FIND WITH US
+              FIND WITH ME
             </p>
             <div className="flex gap-3">
               {[

@@ -4,7 +4,7 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Anexa Soft",
+  title: "Nesad - Portfolio",
   description:
     "Anexa soft provide ui/ux design, Frontend, Backend, Web development and mobile app development services",
 };
