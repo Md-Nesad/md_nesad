@@ -9,8 +9,8 @@ const SkillsSection = () => {
   return (
     <section className="bg-[#212428] text-white py-16 px-6 md:px-16 lg:px-42 mt-1 mb-[2px]">
       <div className=" mx-auto text-center">
-        <p className="text-[#F896BD] font-semibold mb-2">
-          2+ Years Crafting Web & Mobile Applications
+        <p className="text-[#EE4036] font-semibold mb-2">
+          02+ Years of Experience
         </p>
         <h2 className="text-3xl md:text-4xl font-bold mb-8 max-sm:text-2xl">
           Frontend and Full Stack excellence
@@ -29,7 +29,6 @@ const SkillsSection = () => {
           </button>
           <button
             onClick={() => setActiveTab("experience")}
-            disabled
             className={`px-20 max-sm:px-5 py-4 border border-gray-700 shadow-[0_0_5px_rgba(255,255,255,0.3)] rounded-md transition-all duration-300 text-lg max-sm:text-[15px] ${
               activeTab === "experience"
                 ? "bg-[#191C1F] text-[#F5EDFF]"
@@ -46,8 +45,8 @@ const SkillsSection = () => {
             {/* Design Skills */}
             <div>
               <h3 className="text-xl font-bold mb-10 relative">
-                Frontend + Mobile (App)
-                <span className="block w-62 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
+                Frontend
+                <span className="block w-25 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
               </h3>
               {skills.frontend.map((skill, i) => (
                 <div key={i} className="mb-6">
@@ -72,7 +71,7 @@ const SkillsSection = () => {
             <div>
               <h3 className="text-lg font-bold mb-10 relative">
                 Backend
-                <span className="block w-23 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
+                <span className="block w-22 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
               </h3>
               {skills.backend.map((skill, i) => (
                 <div key={i} className="mb-6">

@@ -63,7 +63,7 @@ export default function HeroArea() {
           className="uppercase tracking-widest text-sm text-gray-400"
         >
           Welcome to
-          <b className="text-orange-400"> Frontend Solutions</b>
+          <b className="text-white"> Frontend Solutions</b>
         </motion.p>
 
         <motion.h1

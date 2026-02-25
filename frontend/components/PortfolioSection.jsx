@@ -37,9 +37,9 @@ export default function PortfolioSection() {
     >
       {/* Heading */}
       <div className="text-center mb-16 mt-7">
-        <p className="text-[#F896BD] font-semibold text-md uppercase mt-2">
-          Our Portfolio{" "}
-          <span className="text-green-600 text-sm">(Client Projects)</span>
+        <p className="text-[#EE4036] font-semibold text-md uppercase mt-2">
+          My Work
+          <span className="text-green-600 text-sm"> (Client Projects)</span>
         </p>
         <h2 className="text-4xl md:text-4xl font-bold mt-2 max-sm:text-2xl">
           Design & Development Highlights
@@ -99,7 +99,7 @@ export default function PortfolioSection() {
             </div>
 
             <div className="p-5 mb-5">
-              <h3 className="text-[#F896BD] font-medium mb-4">{item.title}</h3>
+              <h3 className="text-[#EE4036] font-medium mb-4">{item.title}</h3>
               <p className="text-xl font-semibold pr-15 mb-10 text-gray-300 flex items-center gap-2">
                 {item.subtitle}
               </p>
@@ -110,7 +110,7 @@ export default function PortfolioSection() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-[#F896BD] hover:text-[#cb7b9b] underline absolute bottom-5 right-5 transition-colors duration-300"
+                  className="text-sm text-[#EE4036] hover:text-[#cb7b9b] underline absolute bottom-5 right-5 transition-colors duration-300"
                 >
                   View Project
                 </a>
@@ -120,7 +120,7 @@ export default function PortfolioSection() {
               <button
                 onClick={() => setSelectedProject(item)}
                 className="
-                  text-[#F896BD] text-xl absolute bottom-5 left-5
+                  text-[#EE4036] text-xl absolute bottom-5 left-5
                   opacity-0 translate-x-[-10px]
                   transition-all duration-300 ease-in-out
                   group-hover:opacity-100 group-hover:translate-x-0
@@ -133,7 +133,7 @@ export default function PortfolioSection() {
         ))}
         {/* Portfolio Link */}
       </div>
-      {/* <div className="text-center mt-16">
+      <div className="text-center mt-16">
         <p className="text-gray-300 text-lg max-sm:text-sm">
           To see my personal projects, visit{" "}
           <a
@@ -145,7 +145,7 @@ export default function PortfolioSection() {
             nesad-portfolio-website.vercel.app
           </a>
         </p>
-      </div> */}
+      </div>
 
       {/* Modal */}
       {selectedProject && (
