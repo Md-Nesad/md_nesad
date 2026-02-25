@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { handleScroll } from "../utility/utility";
-import logo from "@/public/agencyLogo.png";
+import logo from "@/public/Logo.png";
 
 export default function Footer() {
   return (
@@ -11,25 +11,24 @@ export default function Footer() {
           {/* Left - Logo and Description */}
           <div className="md:col-span-2 md:w-100">
             <div className="flex items-center mb-4">
-              <Image src={logo} alt="Logo" className="w-12 h-12 mr-2" />
-              <h2 className="text-[#F896BD] text-2xl max-sm:text-lg font-semibold">
-                Anexa Soft
+              <Image src={logo} alt="Logo" className="w-10 h-10 mr-4" />
+              <h2 className=" text-2xl max-sm:text-lg font-semibold">
+                Frontend Solutions
               </h2>
             </div>
             <p className="text-sm text-[#F5EDFFCC] leading-relaxed max-sm:text-justify">
-              <b className="text-[#F896BD]">Anexa Soft</b> is a results-driven
-              digital agency specializing in UI/UX design, web development, and
-              mobile app development. We help businesses transform their ideas
-              into modern, scalable, and high-performing digital products. Our
-              team focuses on user-centered design, clean code, and innovative
-              solutions to deliver seamless experiences that drive growth and
-              success.
+              I’m a results-driven Frontend & Full-Stack Developer specializing
+              in UI/UX-focused web applications. I build scalable,
+              high-performance digital products using clean, maintainable code
+              and modern technologies. With strong attention to detail and a
+              user-centered mindset, I focus on delivering responsive,
+              optimized, and business-driven solutions.
             </p>
           </div>
 
           {/* Middle - Quick Links */}
           <div>
-            <h3 className="text-[#F896BD] text-lg font-semibold mb-4">
+            <h3 className="text-[#EE4036] text-lg font-semibold mb-4">
               Quick Link
             </h3>
             <ul className="space-y-2 text-[#F5EDFFCC]">
@@ -38,7 +37,7 @@ export default function Footer() {
                   onClick={() =>
                     window.scrollTo({ top: 0, behavior: "smooth" })
                   }
-                  className="hover:text-[#F896BD]"
+                  className="hover:text-[#EE4036]"
                 >
                   Home
                 </button>
@@ -46,7 +45,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => handleScroll("services")}
-                  className="hover:text-[#F896BD]"
+                  className="hover:text-[#EE4036]"
                 >
                   Service
                 </button>
@@ -54,7 +53,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => handleScroll("portfolio")}
-                  className="hover:text-[#F896BD]"
+                  className="hover:text-[#EE4036]"
                 >
                   Portfolio
                 </button>
@@ -62,7 +61,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => handleScroll("contact")}
-                  className="hover:text-[#F896BD]"
+                  className="hover:text-[#EE4036]"
                 >
                   Contact
                 </button>
@@ -72,17 +71,17 @@ export default function Footer() {
 
           {/* Right - Contact */}
           <div className="lg:ml-15">
-            <h3 className="text-[#F896BD] text-lg font-semibold mb-4">
+            <h3 className="text-[#EE4036] text-lg font-semibold mb-4">
               Contact Us
             </h3>
             <ul className="space-y-3 text-sm text-[#F5EDFFCC]">
               <li>
                 📧 <span className="font-medium">Email:</span> <br />
-                anexasoft@gmail.com
+                nesadm26@gmail.com
               </li>
               <li>
                 📞 <span className="font-medium">WhatsApp:</span> <br />
-                +880 1804-955129
+                +880 1300-113023
               </li>
               <li>
                 🌐 <span className="font-medium">Location:</span> <br />

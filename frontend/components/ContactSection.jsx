@@ -14,7 +14,7 @@ export default function ContactSection() {
       className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42"
     >
       <div className="text-center mb-16 mt-5">
-        <p className="text-[#F896BD] text-sm font-semibold">Contact Us</p>
+        <p className="text-[#EE4036] text-sm font-semibold">Contact Me</p>
         <h2 className="text-4xl max-sm:text-2xl md:text-4xl text-[#F5EDFF] font-bold mt-2">
           Let’s Build Something Great
         </h2>
@@ -90,7 +90,7 @@ export default function ContactSection() {
           <Link href="https://wa.me/message/WEGMWKKNQM5GB1" target="_blank">
             <button
               type="button"
-              className="w-full bg-[#212428] py-3 rounded-sm shadow-[0_0_5px_rgba(255,255,255,0.3)] text-[#F5EDFFCC] font-semibold hover:bg-[#17191c] transition"
+              className="w-full bg-[#212428] py-3 rounded-sm shadow-[0_0_5px_rgba(255,255,255,0.3)] text-[#F5EDFFCC] font-semibold hover:bg-[#17191c] transition mt-8"
             >
               Send Message
             </button>
@@ -105,16 +105,20 @@ export default function ContactSection() {
             className="rounded-md mb-6 hover:scale-103 transition duration-300"
           />
           <h3 className="text-lg font-semibold mb-1 text-[#F5EDFFCC]">
-            Anexa Soft
+            Md. Nesad
           </h3>
-          <p className="text-gray-400 mb-4">Software Company</p>
+          <p className="text-gray-400 mb-4">Frontend Developer</p>
           <p className="text-gray-400 mb-4">
             Digital solutions for a connected world. We specialize in crafting
             seamless digital experiences that drive results. Let's create
             something amazing together.
           </p>
-          <p className="text-gray-400 mb-2">WhatsApp: +880 1804-955129</p>
-          <p className="text-gray-400 mb-6">Email: anexasoft@gmail.com</p>
+          <p className="text-gray-400 mb-2">
+            <b>WhatsApp:</b> +880 1300-113023
+          </p>
+          <p className="text-gray-400 mb-6">
+            <b>Email:</b> nesadm26@gmail.com
+          </p>
 
           <p className="text-gray-400 mb-2">FIND WITH US</p>
           <div className="md:mt-1">

@@ -6,7 +6,7 @@ export default function Clients() {
   return (
     <section className="bg-[#212428] text-white py-18 px-6  md:px-16 lg:px-42 mb-[2px]">
       {/* Section Header */}
-      <h4 className="text-[#F896BD] uppercase text-sm tracking-wider font-semibold mb-2">
+      <h4 className="text-[#EE4036] uppercase text-sm tracking-wider font-semibold mb-2">
         Popular Client
       </h4>
       <h2 className="text-3xl max-sm:text-2xl md:text-4xl font-bold mb-10">

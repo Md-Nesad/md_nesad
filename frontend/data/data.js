@@ -160,7 +160,7 @@ export const testimonials = [
     role: "Product Manager",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     review:
-      "Frontend development at Anexa Soft is exceptional. The team transformed our concepts into a seamless digital experience, delivering a polished product ahead of schedule.",
+      "Frontend development at Frontend Solutions is exceptional. The team transformed our concepts into a seamless digital experience, delivering a polished product ahead of schedule.",
   },
   {
     id: 2,
@@ -168,7 +168,7 @@ export const testimonials = [
     role: "CEO, StartupHub",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     review:
-      "Working with Anexa Soft was a game-changer for our business. The team is professional, creative, and always delivered beyond expectations.",
+      "Working with Frontend Solutions was a game-changer for our business. The team is professional, creative, and always delivered beyond expectations.",
   },
   {
     id: 3,
@@ -176,7 +176,7 @@ export const testimonials = [
     role: "Tech Lead, InnovateX",
     image: "https://randomuser.me/api/portraits/men/76.jpg",
     review:
-      "Anexa Soft were pixel-perfect, fast, and scalable. Highly recommended for anyone looking to elevate their digital products.",
+      "Frontend Solutions were pixel-perfect, fast, and scalable. Highly recommended for anyone looking to elevate their digital products.",
   },
   {
     id: 4,
@@ -184,6 +184,6 @@ export const testimonials = [
     role: "Marketing Director",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     review:
-      "Anexa Soft brought our vision to life with outstanding responsive and pixel-perfect design. The attention to detail and delivery speed were unmatched.",
+      "Frontend Solutions brought our vision to life with outstanding responsive and pixel-perfect design. The attention to detail and delivery speed were unmatched.",
   },
 ];

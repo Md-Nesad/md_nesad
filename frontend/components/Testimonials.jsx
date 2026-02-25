@@ -25,7 +25,7 @@ export default function Testimonials() {
       id="testimonial"
       className="bg-[#212428] text-white py-16 px-6 flex flex-col items-center mt-1"
     >
-      <h4 className="text-[#F896BD] uppercase text-sm tracking-wider font-semibold mb-2 mt-10">
+      <h4 className="text-[#EE4036] uppercase text-sm tracking-wider font-semibold mb-2 mt-10">
         Testimonials
       </h4>
       <h2 className="text-3xl max-sm:text-2xl md:text-4xl font-bold mb-10 text-center">
