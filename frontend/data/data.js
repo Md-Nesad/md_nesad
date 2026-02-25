@@ -76,28 +76,28 @@ export const clients = [
 
 export const services = [
   {
-    title: "UI/UX Design",
-    desc: "We create modern, user-centric interfaces with intuitive flows, wireframes, and interactive prototypes, ensuring seamless experiences across web and mobile platforms.",
+    title: "Frontend Development",
+    desc: "Modern, responsive, and pixel-perfect user interfaces built with React, Next.js, and TypeScript. Focused on performance, accessibility, and seamless user experience.",
   },
   {
-    title: "Full Stack Development",
-    desc: "End-to-end web solutions combining scalable architecture, secure backend systems, and high-performance frontend experiences for production-ready applications.",
+    title: "Web Application Development",
+    desc: "Scalable and production-ready web applications with clean architecture, secure authentication, and efficient state management.",
   },
   {
-    title: "Web & App Development",
-    desc: "Custom websites and mobile apps built with modern technologies, optimized for speed, responsiveness, and real-world business impact.",
+    title: "UI Implementation from Design",
+    desc: "Accurate conversion of Figma or design files into fully functional, responsive web interfaces with attention to detail and consistency.",
   },
   {
-    title: "Business & Management Systems",
-    desc: "Tailored CRM, ERP, MVP, dashboards, and enterprise management systems designed to automate workflows, streamline operations, and enhance productivity.",
+    title: "Performance Optimization",
+    desc: "Improving loading speed, Core Web Vitals, SEO structure, and overall frontend performance for better user engagement and ranking.",
   },
   {
-    title: "DevOps & CI/CD",
-    desc: "Automated deployment pipelines, cloud infrastructure setup, and continuous integration/delivery for fast, reliable, and seamless product releases.",
+    title: "API Integration",
+    desc: "Seamless integration of REST APIs, third-party services, authentication systems, and backend connectivity for dynamic applications.",
   },
   {
-    title: "Security & Performance Optimization",
-    desc: "Robust security measures, code audits, and performance optimization to ensure your applications remain secure, fast, and scalable under all conditions.",
+    title: "Website Maintenance & Enhancement",
+    desc: "Ongoing improvements, feature additions, bug fixing, and UI refinements to keep your web product modern and scalable.",
   },
 ];
 

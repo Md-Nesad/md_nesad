@@ -22,7 +22,11 @@ export default function ContactSection() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* Contact Form */}
-        <form className="lg:col-span-2 bg-[#212428] p-8 rounded-lg shadow-[0_0_5px_rgba(255,255,255,0.3)] space-y-6">
+        <form
+          action="https://formsubmit.co/nesadm26@gmail.com"
+          method="POST"
+          className="lg:col-span-2 bg-[#212428] p-8 rounded-lg shadow-[0_0_5px_rgba(255,255,255,0.3)] space-y-6"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm mb-2 text-[#F5EDFFCC]">
@@ -30,6 +34,8 @@ export default function ContactSection() {
               </label>
               <input
                 type="text"
+                name="name"
+                required
                 className="w-full bg-[#1E2125] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]"
               />
             </div>
@@ -39,6 +45,8 @@ export default function ContactSection() {
               </label>
               <input
                 type="number"
+                name="number"
+                required
                 className="w-full bg-[#1E2125] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]"
               />
             </div>
@@ -48,6 +56,8 @@ export default function ContactSection() {
               </label>
               <input
                 type="email"
+                name="email"
+                required
                 className="w-full bg-[#1E2125] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]"
               />
             </div>
@@ -56,7 +66,11 @@ export default function ContactSection() {
                 Package
               </label>
               <div className="relative">
-                <select className="w-full bg-[#1E2125] text-[#F5EDFFCC] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] appearance-none curosr-pointer">
+                <select
+                  name="package"
+                  required
+                  className="w-full bg-[#1E2125] text-[#F5EDFFCC] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] appearance-none curosr-pointer"
+                >
                   <option>Select Package</option>
                   <option>Starter Plan</option>
                   <option>Pro Plan</option>
@@ -73,6 +87,8 @@ export default function ContactSection() {
             </label>
             <input
               type="text"
+              name="subject"
+              required
               className="w-full bg-[#1E2125] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]"
             />
           </div>
@@ -82,6 +98,7 @@ export default function ContactSection() {
               MESSAGE
             </label>
             <textarea
+              name="message"
               rows="3"
               className="w-full bg-[#1E2125] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]"
             ></textarea>
@@ -89,7 +106,7 @@ export default function ContactSection() {
 
           <Link href="https://wa.me/message/WEGMWKKNQM5GB1" target="_blank">
             <button
-              type="button"
+              type="submit"
               className="w-full bg-[#212428] py-3 rounded-sm shadow-[0_0_5px_rgba(255,255,255,0.3)] text-[#F5EDFFCC] font-semibold hover:bg-[#17191c] transition mt-8"
             >
               Send Message
