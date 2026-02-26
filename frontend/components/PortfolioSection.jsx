@@ -33,10 +33,10 @@ export default function PortfolioSection() {
   return (
     <section
       id="portfolio"
-      className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42 mt-1"
+      className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42"
     >
       {/* Heading */}
-      <div className="text-center mb-16 mt-7">
+      <div className="text-center mb-16">
         <p className="text-[#EE4036] font-semibold text-md uppercase mt-2">
           My Work
           <span className="text-green-600 text-sm"> (Client Projects)</span>

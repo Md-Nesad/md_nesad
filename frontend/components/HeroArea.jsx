@@ -14,7 +14,13 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function HeroArea() {
-  const titles = ["Frontend Developer", "UI developer", "Full stack developer"];
+  const titles = [
+    "Frontend Developer",
+    "UI developer",
+    "React.js Developer",
+    "Next.js Developer",
+    "Web developer",
+  ];
   const [displayedText, setDisplayedText] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
