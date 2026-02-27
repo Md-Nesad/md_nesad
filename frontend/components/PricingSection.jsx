@@ -52,7 +52,7 @@ export default function PricingSection() {
 
           <button
             onClick={() => {
-              window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
+              window.open("https://wa.me/01300113023", "_blank");
             }}
             className="w-full bg-[#212428] text-[#FAAF40] py-3 rounded-md font-semibold hover:bg-[#17191c] transition duration-150 shadow-[0_0_5px_rgba(255,255,255,0.3)] mt-21"
           >
@@ -99,7 +99,7 @@ export default function PricingSection() {
 
           <button
             onClick={() => {
-              window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
+              window.open("https://wa.me/01300113023", "_blank");
             }}
             className="w-full bg-[#212428] text-[#FAAF40] py-3 rounded-md font-semibold hover:bg-[#17191c] transition duration-150 shadow-[0_0_5px_rgba(255,255,255,0.3)]"
           >
@@ -146,7 +146,7 @@ export default function PricingSection() {
 
           <button
             onClick={() => {
-              window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank");
+              window.open("https://wa.me/01300113023", "_blank");
             }}
             className="w-full bg-[#212428] text-[#FAAF40] py-3 mt-2 rounded-md font-semibold hover:bg-[#17191c] transition duration-150 shadow-[0_0_5px_rgba(255,255,255,0.3)]"
           >

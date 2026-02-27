@@ -104,14 +104,12 @@ export default function ContactSection() {
             ></textarea>
           </div>
 
-          <Link href="https://wa.me/message/WEGMWKKNQM5GB1" target="_blank">
-            <button
-              type="submit"
-              className="w-full bg-[#212428] py-3 rounded-sm shadow-[0_0_5px_rgba(255,255,255,0.3)] text-[#F5EDFFCC] font-semibold hover:bg-[#17191c] transition mt-8"
-            >
-              Send Message
-            </button>
-          </Link>
+          <button
+            type="submit"
+            className="w-full bg-[#212428] py-3 rounded-sm shadow-[0_0_5px_rgba(255,255,255,0.3)] text-[#F5EDFFCC] font-semibold hover:bg-[#17191c] transition mt-8"
+          >
+            Send Message
+          </button>
         </form>
 
         {/* Profile Card */}
@@ -144,17 +142,17 @@ export default function ContactSection() {
                 {
                   src: linkedin,
                   alt: "Find us on linkedin",
-                  link: "https://www.linkedin.com/company/anexa-soft/",
+                  link: "https://www.linkedin.com/in/mdnesad/",
                 },
                 {
                   src: fiverr,
                   alt: "Find us on discord",
-                  link: "https://discord.gg/WngcepYWXn",
+                  link: "https://discord.com/channels/@me",
                 },
                 {
                   src: whatsApp,
                   alt: "Contact us by whatsApp",
-                  link: "https://wa.me/message/WEGMWKKNQM5GB1",
+                  link: "https://wa.me/01300113023",
                 },
               ].map((social, idx) => {
                 return (

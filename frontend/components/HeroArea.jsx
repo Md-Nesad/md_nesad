@@ -150,17 +150,17 @@ export default function HeroArea() {
                 {
                   src: linkedin,
                   alt: "Contact on linkedin",
-                  link: "https://www.linkedin.com/company/anexa-soft/",
+                  link: "https://www.linkedin.com/in/mdnesad/",
                 },
                 {
                   src: fiverr,
                   alt: "Contact on discord",
-                  link: "https://discord.gg/WngcepYWXn",
+                  link: "https://discord.com/channels/@me",
                 },
                 {
                   src: whatsApp,
                   alt: "Contact by whatsApp",
-                  link: "https://wa.me/message/WEGMWKKNQM5GB1",
+                  link: "https://wa.me/01300113023",
                 },
               ].map((social, idx) => {
                 return (

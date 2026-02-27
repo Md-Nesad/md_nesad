@@ -78,9 +78,7 @@ export default function Navbar() {
       {/* Buttons */}
       <div className="flex items-center gap-3">
         <button
-          onClick={() =>
-            window.open("https://wa.me/message/WEGMWKKNQM5GB1", "_blank")
-          }
+          onClick={() => window.open("https://wa.me/01300113023", "_blank")}
           className="hidden md:flex items-center gap-2 bg-[#1A1C20] shadow-md shadow-[#63636352] px-4 py-2 rounded-md font-medium hover:scale-105 transition text-[#EE4036]"
         >
           <ShoppingCart size={16} />
