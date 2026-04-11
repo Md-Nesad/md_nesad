@@ -13,7 +13,7 @@ export default function Services() {
         className="text-center mb-12 mt-10"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.3 }}
         viewport={{ once: true }}
       >
         <p className="text-[#EE4036] font-semibold uppercase tracking-widest">
@@ -25,15 +25,17 @@ export default function Services() {
       </motion.div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
         {services.map((service, index) => (
-          <motion.div
+          <div
             key={index}
             className="bg-[#212428] px-7 py-6 rounded-lg hover:bg-[#191C1F] shadow-[0_0_5px_rgba(255,255,255,0.3)] transition-all duration-300 hover:scale-105"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.3 }}
-            viewport={{ once: true }}
           >
             {/* Circle Icon Placeholder */}
             <motion.div
@@ -51,9 +53,9 @@ export default function Services() {
             <p className="text-[#f5edffe4] text-md leading-relaxed max-sm:text-justify">
               {service.desc}
             </p>
-          </motion.div>
+          </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -1,18 +1,31 @@
 "use client";
 import { Icon } from "@/public/Icon";
 import { handleScroll } from "@/utility/utility";
+import { motion } from "framer-motion";
 
 export default function PricingSection() {
   return (
     <section className="bg-[#212428] text-white py-20 px-4 md:px-12 lg:px-42 mb-[2px]">
-      <div className="text-center mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-center mb-16"
+      >
         <p className="text-[#EE4036] text-sm font-semibold">Best Pricing</p>
         <h2 className="text-4xl max-sm:text-2xl md:text-4xl font-bold mt-2">
           Plans That Fit Your Project
         </h2>
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-3 gap-7"
+      >
         {/* Starter Plan */}
         <div className="bg-[#212428] rounded-lg px-8 pb-8 pt-6 shadow-[0_0_5px_rgba(255,255,255,0.3)] hover:scale-105 hover:bg-[#1D1F22] transition duration-300">
           <h3 className="text-xl font-semibold mb-2 text-center border-b border-gray-700 pb-4">
@@ -153,7 +166,7 @@ export default function PricingSection() {
             Get Started
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

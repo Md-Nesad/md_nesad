@@ -13,14 +13,26 @@ export default function ContactSection() {
       id="contact"
       className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42"
     >
-      <div className="text-center mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-center mb-16"
+      >
         <p className="text-[#EE4036] text-sm font-semibold">Contact Me</p>
         <h2 className="text-4xl max-sm:text-2xl md:text-4xl text-[#F5EDFF] font-bold mt-2">
           Let’s Build Something Great
         </h2>
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 lg:grid-cols-3 gap-10"
+      >
         {/* Contact Form */}
         <form
           action="https://formsubmit.co/nesadm26@gmail.com"
@@ -47,7 +59,7 @@ export default function ContactSection() {
                 type="number"
                 name="number"
                 required
-                className="w-full bg-[#1E2125] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]"
+                className="w-full bg-[#1E2125] p-3 rounded border-none focus:outline-none shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] appearance-none"
               />
             </div>
             <div>
@@ -122,7 +134,7 @@ export default function ContactSection() {
           <h3 className="text-lg font-semibold mb-1 text-[#F5EDFFCC]">
             Md. Nesad
           </h3>
-          <p className="text-gray-400 mb-4">Frontend Developer</p>
+          <p className="text-gray-400 mb-4">Mid Level Frontend Developer</p>
           <p className="text-gray-400 mb-4">
             Digital solutions for a connected world. We specialize in crafting
             seamless digital experiences that drive results. Let's create
@@ -181,7 +193,7 @@ export default function ContactSection() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

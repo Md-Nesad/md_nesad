@@ -1,20 +1,34 @@
 "use client";
 import { clients } from "@/data/data";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Clients() {
   return (
     <section className="bg-[#212428] text-white py-18 px-6  md:px-16 lg:px-42 mb-[2px]">
       {/* Section Header */}
-      <h4 className="text-[#EE4036] uppercase text-sm tracking-wider font-semibold mb-2">
-        Popular Client
-      </h4>
-      <h2 className="text-3xl max-sm:text-2xl md:text-4xl font-bold mb-10">
-        Our Amazing Clients
-      </h2>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h4 className="text-[#EE4036] uppercase text-sm tracking-wider font-semibold mb-2">
+          Popular Client
+        </h4>
+        <h2 className="text-3xl max-sm:text-2xl md:text-4xl font-bold mb-10">
+          Our Amazing Clients
+        </h2>
+      </motion.div>
 
       {/* Clients Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
         {clients.map((client) => (
           <div
             key={client.id}
@@ -43,7 +57,7 @@ export default function Clients() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

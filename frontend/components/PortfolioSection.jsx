@@ -36,7 +36,13 @@ export default function PortfolioSection() {
       className="bg-[#212428] text-white py-20 px-6 md:px-16 lg:px-42"
     >
       {/* Heading */}
-      <div className="text-center mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-center mb-16"
+      >
         <p className="text-[#EE4036] font-semibold text-md uppercase mt-2">
           My Work
           <span className="text-green-600 text-sm"> (Client Projects)</span>
@@ -44,10 +50,16 @@ export default function PortfolioSection() {
         <h2 className="text-4xl md:text-4xl font-bold mt-2 max-sm:text-2xl">
           Design & Development Highlights
         </h2>
-      </div>
+      </motion.div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
         {projects.map((item, index) => (
           <div
             key={index}
@@ -132,7 +144,7 @@ export default function PortfolioSection() {
           </div>
         ))}
         {/* Portfolio Link */}
-      </div>
+      </motion.div>
       <div className="text-center mt-16">
         <p className="text-gray-300 text-lg max-sm:text-sm">
           To see my personal projects, visit{" "}

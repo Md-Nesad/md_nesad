@@ -9,90 +9,104 @@ const SkillsSection = () => {
   return (
     <section className="bg-[#212428] text-white py-16 px-6 md:px-16 lg:px-42 mt-1 mb-[2px]">
       <div className=" mx-auto text-center">
-        <p className="text-[#EE4036] font-semibold mb-2">
-          02+ Years of Experience
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 max-sm:text-2xl">
-          Frontend and Full Stack excellence
-        </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <p className="text-[#EE4036] font-semibold mb-2">
+            02+ Years of Experience
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 max-sm:text-2xl">
+            Frontend and Full Stack excellence
+          </h2>
 
-        <div className="inline-flex rounded-md  p-2 mb-12  gap-2">
-          <button
-            onClick={() => setActiveTab("skills")}
-            className={`px-20 max-sm:px-5 py-4 border border-gray-700 shadow-[0_0_5px_rgba(255,255,255,0.3)] rounded-md transition-all duration-300 text-lg max-sm:text-[15px] ${
-              activeTab === "skills"
-                ? "bg-[#191C1F] text-[#F5EDFF]"
-                : "text-[#F5EDFFB2] bg-[#212428]"
-            }`}
-          >
-            Tech Stack
-          </button>
-          <button
-            onClick={() => setActiveTab("experience")}
-            className={`px-20 max-sm:px-5 py-4 border border-gray-700 shadow-[0_0_5px_rgba(255,255,255,0.3)] rounded-md transition-all duration-300 text-lg max-sm:text-[15px] ${
-              activeTab === "experience"
-                ? "bg-[#191C1F] text-[#F5EDFF]"
-                : "text-[#F5EDFFB2] bg-[#212428]"
-            }`}
-          >
-            Experience
-          </button>
-        </div>
+          <div className="inline-flex rounded-md  p-2 mb-12  gap-2">
+            <button
+              onClick={() => setActiveTab("skills")}
+              className={`px-20 max-sm:px-5 py-4 border border-gray-700 shadow-[0_0_5px_rgba(255,255,255,0.3)] rounded-md transition-all duration-300 text-lg max-sm:text-[15px] ${
+                activeTab === "skills"
+                  ? "bg-[#191C1F] text-[#F5EDFF]"
+                  : "text-[#F5EDFFB2] bg-[#212428]"
+              }`}
+            >
+              Tech Stack
+            </button>
+            <button
+              onClick={() => setActiveTab("experience")}
+              className={`px-20 max-sm:px-5 py-4 border border-gray-700 shadow-[0_0_5px_rgba(255,255,255,0.3)] rounded-md transition-all duration-300 text-lg max-sm:text-[15px] ${
+                activeTab === "experience"
+                  ? "bg-[#191C1F] text-[#F5EDFF]"
+                  : "text-[#F5EDFFB2] bg-[#212428]"
+              }`}
+            >
+              Experience
+            </button>
+          </div>
+        </motion.div>
 
         {/* Skills Tab */}
-        {activeTab === "skills" && (
-          <div className="grid md:grid-cols-2 gap-12 text-left">
-            {/* Design Skills */}
-            <div>
-              <h3 className="text-xl font-bold mb-10 relative">
-                Frontend
-                <span className="block w-25 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
-              </h3>
-              {skills.frontend.map((skill, i) => (
-                <div key={i} className="mb-6">
-                  <div className="flex justify-between mb-1 text-lg font-medium">
-                    <span>{skill.name}</span>
-                    <span>{skill.level}%</span>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: false }}
+        >
+          {activeTab === "skills" && (
+            <div className="grid md:grid-cols-2 gap-12 text-left">
+              {/* Design Skills */}
+              <div>
+                <h3 className="text-xl font-bold mb-10 relative">
+                  Frontend
+                  <span className="block w-25 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
+                </h3>
+                {skills.frontend.map((skill, i) => (
+                  <div key={i} className="mb-6">
+                    <div className="flex justify-between mb-1 text-lg font-medium">
+                      <span>{skill.name}</span>
+                      <span>{skill.level}%</span>
+                    </div>
+                    <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+                      <motion.div
+                        className="h-2 rounded-full bg-gradient-to-r from-yellow-400 to-red-500"
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${skill.level}%` }}
+                        transition={{ duration: 1.5, ease: "easeInOut" }}
+                        viewport={{ once: true }}
+                      />
+                    </div>
                   </div>
-                  <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
-                    <motion.div
-                      className="h-2 rounded-full bg-gradient-to-r from-yellow-400 to-red-500"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      transition={{ duration: 1.5, ease: "easeInOut" }}
-                      viewport={{ once: true }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
 
-            {/* Development Skills */}
-            <div>
-              <h3 className="text-lg font-bold mb-10 relative">
-                Backend
-                <span className="block w-22 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
-              </h3>
-              {skills.backend.map((skill, i) => (
-                <div key={i} className="mb-6">
-                  <div className="flex justify-between mb-1 text-lg font-medium">
-                    <span>{skill.name}</span>
-                    <span>{skill.level}%</span>
+              {/* Development Skills */}
+              <div>
+                <h3 className="text-lg font-bold mb-10 relative">
+                  Backend
+                  <span className="block w-22 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mt-1" />
+                </h3>
+                {skills.backend.map((skill, i) => (
+                  <div key={i} className="mb-6">
+                    <div className="flex justify-between mb-1 text-lg font-medium">
+                      <span>{skill.name}</span>
+                      <span>{skill.level}%</span>
+                    </div>
+                    <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+                      <motion.div
+                        className="h-2 rounded-full bg-gradient-to-r from-yellow-400 to-red-500"
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${skill.level}%` }}
+                        transition={{ duration: 2.5, ease: "easeInOut" }}
+                        viewport={{ once: true }}
+                      />
+                    </div>
                   </div>
-                  <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
-                    <motion.div
-                      className="h-2 rounded-full bg-gradient-to-r from-yellow-400 to-red-500"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      transition={{ duration: 2.5, ease: "easeInOut" }}
-                      viewport={{ once: true }}
-                    />
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </motion.div>
 
         {/* Experience Tab */}
         {activeTab === "experience" && (

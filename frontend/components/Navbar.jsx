@@ -53,7 +53,7 @@ export default function Navbar() {
       >
         <Image src={Logo} alt="Logo" width={40} height={40} />
         <h1 className="text-orange-400 font-bold text-lg">
-          Frontend <span className="text-white">dfasdfasf</span>
+          Frontend <span className="text-white">Solutions</span>
         </h1>
       </div>
 
