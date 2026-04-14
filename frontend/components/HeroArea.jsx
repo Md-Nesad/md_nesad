@@ -193,7 +193,7 @@ export default function HeroArea() {
 
       {/* Right Side Image */}
       <div className="mt-10 md:mt-0">
-        <div className="relative w-[300px] md:w-[400px]">
+        <div className="relative w-[300px] md:w-[480px]">
           <Image
             src={profileImg}
             alt="Micel Brown"
