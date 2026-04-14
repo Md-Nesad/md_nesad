@@ -43,10 +43,9 @@ export const projects = [
     paragraphSix:
       "The final result includes component-based layouts, detailed style guidelines, and a responsive prototype—ready for seamless developer implementation. This dashboard sets a strong foundation for data-driven decision-making and administrative efficiency.",
   },
-
   {
     id: 2,
-    title: "Live Streaming App management system",
+    title: "Live Streaming App management system ",
     subtitle:
       "Delivering real-time streaming control with a seamless experience.",
     describe:
@@ -129,7 +128,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Adopted Life Style (Video platform)",
+    title: "Smm Panel (Business Website)",
     subtitle: "Crafting intuitive user experiences.",
     describe:
       "A professional, responsive business website built with a focus on usability, branding consistency, and seamless cross-device performance.",
