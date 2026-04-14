@@ -11,9 +11,9 @@ import hotelThree from "@/public/portfolioGallery/hotelThree.png";
 import appOne from "@/public/PortfolioImage/streamdoing/streamdoingone.png";
 import appTwo from "@/public/PortfolioImage/streamdoing/streamdoingtwo.png";
 import appThree from "@/public/PortfolioImage/streamdoing/streamdoingthree.png";
-import lifeone from "@/public/PortfolioImage/lifeStyle/lifeone.png";
-import lifetwo from "@/public/PortfolioImage/lifeStyle/lifetwo.png";
-import lifethree from "@/public/PortfolioImage/lifeStyle/lifethree.png";
+import lifeone from "@/public/PortfolioImage/lifestyle/lifeone.png";
+import lifetwo from "@/public/PortfolioImage/lifestyle/lifetwo.png";
+import lifethree from "@/public/PortfolioImage/lifestyle/lifethree.png";
 
 export const projects = [
   {
