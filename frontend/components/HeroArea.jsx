@@ -192,7 +192,12 @@ export default function HeroArea() {
       </div>
 
       {/* Right Side Image */}
-      <div className="mt-10 md:mt-0">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="mt-10 md:mt-0"
+      >
         <div className="relative w-[300px] md:w-[480px]">
           <Image
             src={profileImg}
@@ -201,7 +206,7 @@ export default function HeroArea() {
             priority
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
