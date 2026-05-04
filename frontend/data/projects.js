@@ -14,6 +14,9 @@ import appThree from "@/public/PortfolioImage/streamdoing/streamdoingthree.png";
 import lifeone from "@/public/PortfolioImage/lifestyle/lifeone.png";
 import lifetwo from "@/public/PortfolioImage/lifestyle/lifetwo.png";
 import lifethree from "@/public/PortfolioImage/lifestyle/lifethree.png";
+import tittoOne from "@/public/PortfolioImage/tittoLive/tittoone.png";
+import tittoTwo from "@/public/PortfolioImage/tittoLive/tittotwo.png";
+import tittoThree from "@/public/PortfolioImage/tittoLive/tittoThree.png";
 
 export const projects = [
   {
@@ -153,4 +156,37 @@ export const projects = [
     paragraphSix:
       "The final delivery included a full design package—UI components, layout specifications, and responsive prototypes—ready for smooth handoff to development. This project represents the perfect blend of design thinking, accessibility, and visual harmony.",
   },
+ {
+  id: 5,
+  title: "Titto Live (Admin Dashboard)",
+  subtitle: "Live Stream App Management Dashboard.",
+  describe:
+    "A powerful and intuitive admin dashboard built to manage a live streaming mobile application, focusing on real-time control, usability, and performance.",
+  clientName: "Michael Anderson (Repeat Client)",
+  date: "2025-03-15",
+  link: "https://titto-live.vercel.app/",
+  dateLabel: "15 March 2026",
+  service: "Frontend Development",
+  budget: 800,
+  currency: "USD",
+  images: [tittoOne, tittoTwo, tittoThree],
+
+  paragraphOne:
+    "This project was developed for a repeat client, Michael Anderson, to create a robust admin dashboard for managing a live streaming mobile application. The goal was to provide full control over users, streams, and platform activities through a clean and efficient interface.",
+
+  paragraphTwo:
+    "The dashboard was designed with a focus on real-time data visibility and ease of management. From monitoring live streams to handling user activities, every feature was structured to ensure quick access and smooth workflows for administrators.",
+
+  paragraphThree:
+    "A responsive and scalable layout was implemented so the dashboard works seamlessly across desktops, tablets, and mobile devices. Special attention was given to performance and data handling to support live streaming operations without delays.",
+
+  paragraphFour:
+    "As a returning client, Michael Anderson collaborated closely throughout the project, helping refine features based on real-world usage and previous experience with the platform.",
+
+  paragraphFive:
+    "With a budget of $800, the project successfully delivered a modern, efficient, and scalable dashboard that simplifies the management of a live streaming ecosystem while maintaining high usability standards.",
+
+  paragraphSix:
+    "The final delivery included reusable UI components, structured layouts, and a performance-optimized interface ready for seamless integration with the live streaming backend services.",
+}
 ];
