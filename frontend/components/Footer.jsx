@@ -17,12 +17,7 @@ export default function Footer() {
               </h2>
             </div>
             <p className="text-sm text-[#F5EDFFCC] leading-relaxed max-sm:text-justify">
-              I’m a results-driven Frontend focused Full-Stack Developer
-              specializing in UI/UX-focused web applications. I build scalable,
-              high-performance digital products using clean, maintainable code
-              and modern technologies. With strong attention to detail and a
-              user-centered mindset, I focus on delivering responsive,
-              optimized, and business-driven solutions.
+              I’m a results-driven, frontend-focused full-stack engineer specializing in complex UI and frontend development. I build scalable, high-performance digital products that help businesses grow, using clean, maintainable code and modern technologies. With strong attention to detail and a user-centered mindset, I deliver responsive, optimized, and business-focused solutions. Let's start and grow together. Feel free to reach out me please.
             </p>
           </div>
 

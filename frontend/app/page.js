@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 import ContactSection from '../components/ContactSection'
 import PortfolioSection from '../components/PortfolioSection'
 import ScrollToTop from '@/components/ScrollToTop'
+import WhatsAppFloatingButton from '@/components/WhatsUpFloatingButton'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <ContactSection />
       <Footer />
       <ScrollToTop />
+      <WhatsAppFloatingButton />
     </div>
   )
 }
