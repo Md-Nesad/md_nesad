@@ -6,7 +6,6 @@ import linkedin from "@/public/HeroImage/linkedin.png";
 import whatsApp from "@/public/HeroImage/whatsapp.png";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
-import Link from "next/link";
 export default function ContactSection() {
   return (
     <section
@@ -134,7 +133,7 @@ export default function ContactSection() {
           <h3 className="text-lg font-semibold mb-1 text-[#F5EDFFCC]">
             Md. Nesad
           </h3>
-          <p className="text-gray-400 mb-4">Mid Level Frontend Developer</p>
+          <p className="text-gray-400 mb-4">Mid Level Frontend Engineer</p>
           <p className="text-gray-400 mb-4">
             Digital solutions for a connected world. We specialize in crafting
             seamless digital experiences that drive results. Let's create
@@ -147,7 +146,7 @@ export default function ContactSection() {
             <b>Email:</b> nesadm26@gmail.com
           </p>
 
-          <p className="text-gray-400 mb-2">FIND WITH US</p>
+          <p className="text-gray-400 mb-2">FIND WITH ME</p>
           <div className="md:mt-1">
             <div className="flex gap-3">
               {[

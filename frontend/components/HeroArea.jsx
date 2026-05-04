@@ -15,11 +15,14 @@ import { motion } from "framer-motion";
 
 export default function HeroArea() {
   const titles = [
-    "Frontend Developer",
-    "UI developer",
-    "React.js Developer",
-    "Next.js Developer",
-    "Web developer",
+    "Frontend Engineer",
+    "UI Engineer",
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "Redux",
+    "Zustand",
+    "TanStack Query"
   ];
   const [displayedText, setDisplayedText] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
@@ -27,7 +30,7 @@ export default function HeroArea() {
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const speed = deleting ? 50 : 60; // typing/deleting speed
+    const speed = deleting ? 40 : 50; // typing/deleting speed
 
     const timeout = setTimeout(() => {
       const fullText = titles[titleIndex];
@@ -81,7 +84,7 @@ export default function HeroArea() {
           Hi, I am <span className="text-orange-400">Md. Nesad</span>
           <br />
           <span className="text-white max-sm:text-[25px]">
-            a {displayedText}.
+            {displayedText}.
           </span>
         </motion.h1>
 
@@ -91,11 +94,9 @@ export default function HeroArea() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-gray-300 leading-relaxed max-sm:text-justify"
         >
-          Before going to collaborate with clients, I take the time to
-          understand their requirements, goals, and target audience. Then I
-          analyze the problem that the client is facing and I provide the best
-          solution to solve that problem by choosing the right technologies and
-          tools.
+          Before collaborating with clients, I take the time to understand their requirements, business goals, and target audience. I analyze these and deliver effective solutions using the right technologies and tools.
+
+I ensure timely delivery, maintain clear communication, and provide regular updates throughout the process—focusing on reliability and client satisfaction.
         </motion.p>
 
         {/* Contact Button */}
